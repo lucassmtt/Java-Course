@@ -1,5 +1,4 @@
-package ex01;
-import java.util.stream.StreamSupport;
+package ex02;
 import java.util.Locale;
 
 public class Main {
