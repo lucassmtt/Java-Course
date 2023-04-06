@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a793618-03c0-4c1c-9d0a-7e2de992063b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex01/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex02/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex03/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex04/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex05_switch_case/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex06_Structure_For/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex07_Functions_for_string/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/ex08_Sintax_Functions/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex01-Data_typing_and_formatting/ex01/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex02-More_formatting/ex02/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex03-Data_processing/ex03/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex04-Data_input/ex04/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex05_switch_case/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex06_Structure_For/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex07_Functions_for_string/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex08_Sintax_Functions/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="8a793618-03c0-4c1c-9d0a-7e2de992063b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

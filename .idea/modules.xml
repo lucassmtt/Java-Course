@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyProject/MyProject.iml" filepath="$PROJECT_DIR$/MyProject/MyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyProject/src/MyProject1.iml" filepath="$PROJECT_DIR$/MyProject/src/MyProject1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Products/Products.iml" filepath="$PROJECT_DIR$/Products/Products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Triangle/Triangle.iml" filepath="$PROJECT_DIR$/Triangle/Triangle.iml" />
+    </modules>
+  </component>
+</project>
