@@ -2,7 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-Exercise_02/Exercise_02.iml
+Exercise_03.iml
 ### Eclipse ###
 .apt_generated
 .classpath
