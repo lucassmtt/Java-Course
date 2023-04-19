@@ -34,8 +34,8 @@ public class Program{
         double areaX = Triangle_x.getArea();
         double areaY = Triangle_y.getArea();
 
-        System.out.printf("Triangle X area: %.2f\n", areaX);
-        System.out.printf("Triangle Y area: %.2f\n", areaY);
+        System.out.printf("entities X area: %.2f\n", areaX);
+        System.out.printf("entities Y area: %.2f\n", areaY);
 
         if (areaX > areaY){
             System.out.println("Larger: X \n");
