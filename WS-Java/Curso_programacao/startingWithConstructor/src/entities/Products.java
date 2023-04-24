@@ -1,11 +1,12 @@
 package entities;
 
+import javax.xml.namespace.QName;
 import java.io.PrintStream;
 
 public class Products {
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
 
     public Products(){
     }
@@ -20,6 +21,26 @@ public class Products {
         this.name = name;
         this.price = price;
         // Could add the "quantity" with default value equal to 0, but that would be redundant
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    public double getPrice(){
+        return this.price;
+    }
+
+    public int getQuantity(){
+        return quantity;
     }
 
     public double totalValueInStock(){

@@ -24,19 +24,19 @@ public class Program{
         Products otherProducts = new Products(name, price);
 
         System.out.printf("Product Data: %s, $ %.2f, %d units, Total: $ %.2f \n",
-                myProduct.name, myProduct.price, myProduct.quantity, myProduct.totalValueInStock());
+                myProduct.getName(), myProduct.getPrice(), myProduct.getQuantity(), myProduct.totalValueInStock());
 
         System.out.print("Enter the number of products to be added in stock: ");
         myProduct.AddProducts(myScanner.nextInt());
 
         System.out.printf("Update data: %s, $ %.2f, %d units, Total: $ %.2f \n",
-                myProduct.name, myProduct.price, myProduct.quantity, myProduct.totalValueInStock());
+                myProduct.getName(), myProduct.getPrice(), myProduct.getQuantity(), myProduct.totalValueInStock());
 
         System.out.print("Enter the number de products to be removed from stock: ");
         myProduct.RemoveProducts(myScanner.nextInt());
 
         System.out.printf("Update data: %s, $ %.2f, %d units, Total: $ %.2f",
-                myProduct.name, myProduct.price, myProduct.quantity, myProduct.totalValueInStock());
+                myProduct.getName(), myProduct.getPrice(), myProduct.getQuantity(), myProduct.totalValueInStock());
 
         myScanner.close();
 
