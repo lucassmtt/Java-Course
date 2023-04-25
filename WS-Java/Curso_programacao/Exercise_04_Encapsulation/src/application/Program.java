@@ -37,6 +37,7 @@ public class Program
             System.out.println("Account data:");
             System.out.print(user_01.toString());
         }
+
         System.out.print("Enter a deposit value: ");
         double amount = mySc.nextDouble();
         user_01.addValue(amount);
