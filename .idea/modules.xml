@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/ArrayList/ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_01/Exercise_01.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_01/Exercise_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_02/Exercise_02.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_02/Exercise_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_03/Exercise_03.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_03/Exercise_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_04_Encapsulation/Exercise_04_Encapsulation.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_04_Encapsulation/Exercise_04_Encapsulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_05_Vectors/Exercise_05_Vectors.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_05_Vectors/Exercise_05_Vectors.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_With_Lists_DEBUG/Exercise_With_Lists.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_With_Lists_DEBUG/Exercise_With_Lists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_part2_DEBUGGED/Exercise_07_Part2_ArrayListDEBUG.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_part2_DEBUGGED/Exercise_07_Part2_ArrayListDEBUG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_08_Matrices/Exercise_08_Matrices.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_08_Matrices/Exercise_08_Matrices.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyProject/MyProject.iml" filepath="$PROJECT_DIR$/MyProject/MyProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyProject/src/MyProject1.iml" filepath="$PROJECT_DIR$/MyProject/src/MyProject1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Products/Products.iml" filepath="$PROJECT_DIR$/Products/Products.iml" />
