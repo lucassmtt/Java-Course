@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Locale;
 
-public class Main {
+public class Exercise_part1 {
     public static void main(String[] args)
     {
         Locale.setDefault(Locale.US);
@@ -39,7 +39,7 @@ public class Main {
                 }
             }
         }
-        System.out.println("Main diagonal: ");
+        System.out.println("Exercise_part1 diagonal: ");
         for (int i = 0; i < main_diagonal.length; i++){
             System.out.print(main_diagonal[i] + " ");
         }
