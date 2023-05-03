@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Composition/Composition.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Composition/Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/DatetimeInJava/DatetimeInJava.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/DatetimeInJava/DatetimeInJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Enum/Enum.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Enum/Enum.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_01/Exercise_01.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_01/Exercise_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_02/Exercise_02.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_02/Exercise_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_03/Exercise_03.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_03/Exercise_03.iml" />
