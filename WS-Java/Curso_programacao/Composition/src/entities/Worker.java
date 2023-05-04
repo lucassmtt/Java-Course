@@ -16,7 +16,7 @@ public class Worker {
     private Worker() {
     }
 
-    private Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
+    public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
@@ -70,6 +70,7 @@ public class Worker {
     public Double income(Integer year, Integer mounth) {
         double sum = baseSalary;
         Calendar cal = Calendar.getInstance();
+        double tot = 0.0;
 
         for (HourContract contract : contracts) {
             cal.setTime(contract.getDate());
@@ -77,10 +78,9 @@ public class Worker {
             int month_Of_contract = 1 + cal.get(Calendar.MONTH);
 
             if (year_Of_contract == year && month_Of_contract == mounth) {
-                sum += contract.totalValue();
-                return sum;
+                tot += contract.totalValue();
             }
         }
-        return null;
+        return sum + tot;
     }
 }

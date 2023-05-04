@@ -18,8 +18,8 @@ public class class_01 {
         Instant instantIso = Instant.parse("2022-09-12T20:38:30Z");
         Instant instantIsoLocal = Instant.parse("2022-09-12T20:38:30-03:00");
 
-        DateTimeFormatter formatCustom = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate dateCustom = LocalDate.parse("30/12/2022", formatCustom);
+        DateTimeFormatter formatCustom = DateTimeFormatter.ofPattern("MM/yyyy");
+        LocalDate dateCustom = LocalDate.parse("12/2022", formatCustom);
 
         DateTimeFormatter formatCustomWithHourAndMin = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         LocalDate dateCustomWithHM = LocalDate.parse("02/07/2004 18:05", formatCustomWithHourAndMin);
@@ -37,6 +37,7 @@ public class class_01 {
         System.out.println("Date time 7: " + dateCustom);
         System.out.println("Date time 8: " + dateCustomWithHM);
         System.out.println("Date time 9: " + dateCustomWithHM2);
+        System.out.println("Date time 10: " + localDateWithArgs);
         System.out.println("Date time 10: " + localDateWithArgs);
     }
 }
