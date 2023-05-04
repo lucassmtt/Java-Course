@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Composition/Composition.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Composition/Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/DatetimeInJava/DatetimeInJava.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/DatetimeInJava/DatetimeInJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Enum/Enum.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Enum/Enum.iml" />
@@ -14,9 +13,11 @@
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_05_Vectors/Exercise_05_Vectors.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_05_Vectors/Exercise_05_Vectors.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_part2_DEBUGGED/Exercise_07_Part2_ArrayListDEBUG.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_part2_DEBUGGED/Exercise_07_Part2_ArrayListDEBUG.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_08_Matrices/Exercise_08_Matrices.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_08_Matrices/Exercise_08_Matrices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_09_Composition/Exercise_09_Composition.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_09_Composition/Exercise_09_Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyProject/MyProject.iml" filepath="$PROJECT_DIR$/MyProject/MyProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyProject/src/MyProject1.iml" filepath="$PROJECT_DIR$/MyProject/src/MyProject1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Products/Products.iml" filepath="$PROJECT_DIR$/Products/Products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/StringBuilding/StringBuilding.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/StringBuilding/StringBuilding.iml" />
       <module fileurl="file://$PROJECT_DIR$/Triangle/Triangle.iml" filepath="$PROJECT_DIR$/Triangle/Triangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/VectorsInJava/VectorsInJava.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/VectorsInJava/VectorsInJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/startingWithConstructor/startingWithConstructor.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/startingWithConstructor/startingWithConstructor.iml" />
