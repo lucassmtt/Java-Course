@@ -53,7 +53,8 @@ public class Client {
                 .append("/")
                 .append(calendar.get(Calendar.MONTH) + 1)
                 .append("/")
-                .append(calendar.get(Calendar.YEAR));
+                .append(calendar.get(Calendar.YEAR))
+                .append("\n");
         return stringBuilder.toString();
     }
 }

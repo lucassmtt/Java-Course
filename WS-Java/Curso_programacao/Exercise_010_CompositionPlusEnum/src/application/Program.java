@@ -30,11 +30,9 @@ public class Program {
         Calendar calendar = new GregorianCalendar();
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         Date formatted_date = formatter.parse(dateInString.formatted("dd/MM/YYYY"));
-
         calendar.setTime(formatted_date);
 
         Client client = new Client(name_client, email_client, formatted_date);
-        System.out.println(client);
 
         System.out.println("Enter order data: ");
         System.out.print("Status: (PENDING_PAYMENT/PROCESSING/SHIPPED/DELIVERED): ");
@@ -46,18 +44,42 @@ public class Program {
             status = input.next().toUpperCase();
         }
 
-
         System.out.print("How many items to this order? ");
         int number_Of_items = input.nextInt();
+        Date moment = new Date();
+        moment.toInstant();
+
+        Order order = new Order(moment, OrderStatus.valueOf(status));
 
         for (int x=1; x<number_Of_items+1; x++){
-            System.out.println("Enter #" + x + "item data: ");
+            System.out.println("Enter #" + x + " item data: ");
             System.out.print("Product name: ");
             String name_product = input.next();
+
             System.out.print("Product price: ");
             Double price = input.nextDouble();
-        }
 
+            System.out.print("Send the quantity: ");
+            int quantity = input.nextInt();
+
+            Product product = new Product(name_product, price);
+            OrderItem item = new OrderItem(quantity, price, product);
+            order.addItem(item);
+        }
+        System.out.println("\nOrder summary: ");
+        System.out.print(order.toString());
+        System.out.print(client.toString());
+        System.out.println();
+        List<OrderItem> items = (order.getItems());
+        for (OrderItem item : items){
+            System.out.println(
+                    item.product.getName() + ", $"
+                    + item.getPrice()
+                    + ", Quantity: "
+                    + item.quantity +
+                    " Subtotal: " + item.subTotal());
+        }
+        System.out.print("\nTotal price: " + order.total());
         input.close();
     }
 }

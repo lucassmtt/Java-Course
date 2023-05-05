@@ -32,4 +32,37 @@ public class Order {
         }
         return total;
     }
+
+    public Date getMoment() {
+        return moment;
+    }
+
+    public void setMoment(Date moment) {
+        this.moment = moment;
+    }
+
+    public OrderStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(OrderStatus status) {
+        this.status = status;
+    }
+
+    public List<OrderItem> getItems() {
+        return items;
+    }
+
+    public void setItems(List<OrderItem> items) {
+        this.items = items;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringB = new StringBuilder();
+        stringB.append("Order Moment: ").append(moment)
+                .append("\nOrder Status: ").append(status)
+                .append("\n");
+        return stringB.toString();
+    }
 }
