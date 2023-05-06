@@ -36,17 +36,29 @@ public class Program {
 //        else{
 //            System.out.println("No");
 //        }
-        Account account = new Account(199, "alex", 1000.0);
-        account.withdraw(200.0);
-        System.out.println(account.getBalance());
+//        Account account = new Account(199, "alex", 1000.0);
+//        account.withdraw(200.0);
+//        System.out.println(account.getBalance());
+//
+//        Account account2 = new SavingAccount(10002, "Jose", 1000.0, 0.01);
+//        account2.withdraw(200.0);
+//        System.out.println(account2.getBalance());
+//
+//        Account account3 = new BussinesAcount(10003, "Maria", 1000.0, 500.0);
+//        account3.withdraw(200);
+//        System.out.println(account3.getBalance());
+        int numAccount = 1000;
+        String name = "lucas";
+        double balance = 1000.0;
+        double loan_limit = 500.0;
 
-        Account account2 = new SavingAccount(10002, "Jose", 1000.0, 0.01);
-        account2.withdraw(200.0);
-        System.out.println(account2.getBalance());
+        Account account_generic = new Account(numAccount, name, balance);
+        Account account_especif = new SavingAccount(numAccount, name, balance, loan_limit);
 
-        Account account3 = new BussinesAcount(10003, "Maria", 1000.0, 500.0);
-        account3.withdraw(200);
-        System.out.println(account3.getBalance());
+        account_generic.withdraw(50.0);
+        account_especif.withdraw(50.0);
+
+        System.out.println(account_generic.getBalance());
+        System.out.println(account_especif.getBalance());
     }
-
 }
