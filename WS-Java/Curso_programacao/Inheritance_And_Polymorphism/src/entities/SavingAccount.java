@@ -29,4 +29,9 @@ public class SavingAccount extends Account {
                 "intrestRate=" + intrestRate +
                 '}';
     }
+
+    @Override
+    public void withdraw(double amount){
+        balance -= amount;
+    }
 }

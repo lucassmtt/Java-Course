@@ -33,13 +33,8 @@ public class Account {
         return balance;
     }
 
-    public void withdraw(Double amount){
-           if (amount < balance){
-               balance -= amount;
-           }
-           else {
-               System.out.println("The balance is below the required amount! ");
-           }
+    public void withdraw(double amount) {
+        balance -= amount + 5.0;
     }
 
     public void deposit(Double amount){
