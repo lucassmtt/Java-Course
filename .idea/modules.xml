@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/AbstractClass_And_MethodsAbstract/AbstractClass.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/AbstractClass_And_MethodsAbstract/AbstractClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/DatetimeInJava/DatetimeInJava.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/DatetimeInJava/DatetimeInJava.iml" />

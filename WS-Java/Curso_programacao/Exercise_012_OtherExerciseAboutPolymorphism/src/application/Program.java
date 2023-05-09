@@ -66,5 +66,6 @@ public class Program {
         for (Product product : productList){
             System.out.println(product.priceTag());
         }
+        input.close();
     }
 }

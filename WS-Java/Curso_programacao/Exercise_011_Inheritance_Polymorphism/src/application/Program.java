@@ -46,5 +46,6 @@ public class Program {
         for (Employee employee : employeeList){
             System.out.print(employee.getName() + " - " + employee.payment() + "\n");
         }
+        scan.close();
     }
 }
