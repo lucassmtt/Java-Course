@@ -1,12 +1,9 @@
 package entities;
 
 public class LegalPerson extends Person{
-    public Integer numberOfEmployees;
+    Integer numberOfEmployees;
 
     public LegalPerson(){}
-    public LegalPerson(Integer numberOfEmployees) {
-        this.numberOfEmployees = numberOfEmployees;
-    }
 
     public LegalPerson(String name, Double anualIncome, Integer numberOfEmployees) {
         super(name, anualIncome);
@@ -22,7 +19,16 @@ public class LegalPerson extends Person{
     }
 
     @Override
-    public Double tax(){
-        if ()
+    public Double tax() {
+        Double tax_ = 0.0;
+        if (numberOfEmployees > 10){
+
+            tax_ = anualIncome * 14 / 100;
+            return tax_;
+        }
+        else {
+             tax_ = anualIncome * 16 / 100;
+             return tax_;
+        }
     }
 }

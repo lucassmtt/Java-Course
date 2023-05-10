@@ -5,8 +5,7 @@ public abstract class Person {
     public Double anualIncome;
 
     public Person(){}
-
-    public Person(String name, Double anualIncome) {
+    public Person(String name, Double anualIncome){
         this.name = name;
         this.anualIncome = anualIncome;
     }
