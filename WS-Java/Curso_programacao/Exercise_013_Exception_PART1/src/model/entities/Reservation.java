@@ -1,25 +1,26 @@
 package model.entities;
 
-import java.time.Year;
-import java.util.Calendar;
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.concurrent.TimeUnit;
+
+import model.exceptions.DomainException;
 
 public class Reservation {
-    Integer roomNumber;
-    Date checkin;
-    Date checkout;
-    public Calendar calendarIN = new GregorianCalendar();
-    public Calendar calendarOUT = new GregorianCalendar();
 
-    public Reservation(){}
+    private Integer roomNumber;
+    private Date checkIn;
+    private Date checkOut;
 
-    public Reservation(Integer roomNumber, Date checkin, Date checkout) {
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+    public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
+        if (!checkOut.after(checkIn)) {
+            throw new DomainException("Check-out date must be after check-in date");
+        }
         this.roomNumber = roomNumber;
-        this.checkin = checkin;
-        this.checkout = checkout;
-        calendarIN.setTime(checkin);
-        calendarOUT.setTime(checkout);
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
     }
 
     public Integer getRoomNumber() {
@@ -30,48 +31,41 @@ public class Reservation {
         this.roomNumber = roomNumber;
     }
 
-    public Date getCheckin() {
-        return checkin;
+    public Date getCheckIn() {
+        return checkIn;
     }
 
-    public Date getCheckout() {
-        return checkout;
+    public Date getCheckOut() {
+        return checkOut;
     }
 
-    public void setCheckout(Date checkout) {
-        this.checkout = checkout;
+    public long duration() {
+        long diff = checkOut.getTime() - checkIn.getTime();
+        return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
-    public void setCheckin(Date checkin) {
-        this.checkin = checkin;
-    }
-
-    public Integer duration(){
-        int day_Checkin = calendarIN.get(Calendar.DAY_OF_MONTH);
-        int month_Checkin = calendarIN.get(Calendar.MONTH);
-        int year_Checkin = calendarIN.get(Calendar.YEAR);
-
-        int day_Checkout = calendarOUT.get(Calendar.DAY_OF_MONTH);
-        int month_Checkout = calendarOUT.get(Calendar.MONTH);
-        int year_Checkout = calendarOUT.get(Calendar.YEAR);
-
-        System.out.println(day_Checkin + "/" + month_Checkin + "/" + year_Checkin);
-        System.out.println(day_Checkout + "/" + month_Checkout + "/" + year_Checkout);
-        if (year_Checkin <= year_Checkout){
-            System.out.println("Year ok");
-            if (month_Checkin <= month_Checkout){
-                System.out.println("month ok");
-                if (day_Checkin < day_Checkout){
-                    System.out.println("day ok");
-                    return day_Checkout - day_Checkin;
-                }
-            }
+    public void updateDates(Date checkIn, Date checkOut) {
+        Date now = new Date();
+        if (checkIn.before(now) || checkOut.before(now)) {
+            throw new DomainException("Reservation dates for update must be future dates");
         }
-        return -1;
+        if (!checkOut.after(checkIn)) {
+            throw new DomainException("Check-out date must be after check-in date");
+        }
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
     }
 
     @Override
     public String toString() {
-        return calendarIN.get(Calendar.YEAR) + "-" + calendarOUT.get(Calendar.YEAR);
+        return "Room "
+                + roomNumber
+                + ", check-in: "
+                + sdf.format(checkIn)
+                + ", check-out: "
+                + sdf.format(checkOut)
+                + ", "
+                + duration()
+                + " nights";
     }
 }

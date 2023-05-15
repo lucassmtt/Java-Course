@@ -1,33 +1,51 @@
 package application;
 
-import model.entities.Reservation;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.Scanner;
-import java.util.spi.CalendarDataProvider;
+
+import model.entities.Reservation;
+import model.exceptions.DomainException;
 
 public class Program {
-    public static void main(String[] args) throws ParseException {
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("Checkin: ");
-        String dateInString = input.next();
+    public static void main(String[] args) {
 
-        System.out.print("Checkout: ");
-        String dateInString2 = input.next();
+        Scanner sc = new Scanner(System.in);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-        Date format = formatter.parse(dateInString.formatted(formatter));
-        Date format2 = formatter.parse(dateInString2.formatted(formatter));
+        try {
+            System.out.print("Room number: ");
+            int number = sc.nextInt();
+            System.out.print("Check-in date (dd/MM/yyyy): ");
+            Date checkIn = sdf.parse(sc.next());
+            System.out.print("Check-out date (dd/MM/yyyy): ");
+            Date checkOut = sdf.parse(sc.next());
 
-        Reservation reservation = new Reservation(100, format, format2);
-        System.out.println(reservation.toString());
+            Reservation reservation = new Reservation(number, checkIn, checkOut);
+            System.out.println("Reservation: " + reservation);
 
-        System.out.println(reservation.duration());
+            System.out.println();
+            System.out.println("Enter data to update the reservation:");
+            System.out.print("Check-in date (dd/MM/yyyy): ");
+            checkIn = sdf.parse(sc.next());
+            System.out.print("Check-out date (dd/MM/yyyy): ");
+            checkOut = sdf.parse(sc.next());
+
+            reservation.updateDates(checkIn, checkOut);
+            System.out.println("Reservation: " + reservation);
+        }
+        catch (ParseException e) {
+            System.out.println("Invalid date format");
+        }
+        catch (DomainException e) {
+            System.out.println("Error in reservation: " + e.getMessage());
+        }
+        catch (RuntimeException e) {
+            System.out.println("Unexpected error");
+        }
+
+        sc.close();
     }
 }
