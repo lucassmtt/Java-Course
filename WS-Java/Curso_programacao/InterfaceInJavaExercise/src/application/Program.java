@@ -18,26 +18,32 @@ public class Program
         Scanner scanner = new Scanner(System.in);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        System.out.println("Send the contract data: ");
-        System.out.print("Date (dd/MM/yyyy): ");
-        String date_in_string = scanner.next();
-        LocalDate date = LocalDate.parse(date_in_string, formatter);
+        try{
+            System.out.println("Send the contract data: ");
+            System.out.print("Date (dd/MM/yyyy): ");
+            String date_in_string = scanner.next();
+            LocalDate date = LocalDate.parse(date_in_string, formatter);
 
-        System.out.print("Send the contract value: ");
-        double contract_value = scanner.nextDouble();
+            System.out.print("Send the contract value: ");
+            double contract_value = scanner.nextDouble();
 
-        System.out.print("Send the number portion: ");
-        int number_portion = scanner.nextInt();
+            System.out.print("Send the number portion: ");
+            int number_portion = scanner.nextInt();
 
 
-        PaypalPayment paypalPayment = new PaypalPayment();
-        List<Double> everyPortions = new ArrayList<>();
-        everyPortions = paypalPayment.tax_portion(contract_value, number_portion);
+            PaypalPayment paypalPayment = new PaypalPayment();
+            List<Double> everyPortions = new ArrayList<>();
+            everyPortions = paypalPayment.tax_portion(contract_value, number_portion);
 
-        for (int x = 0; x < everyPortions.size(); x++)
-        {
-            System.out.println(date.plusMonths(x + 1) + " - " + everyPortions.get(x));
+            for (int x = 0; x < everyPortions.size(); x++)
+            {
+                System.out.println(date.plusMonths(x + 1) + " - " + everyPortions.get(x));
+            }
+            scanner.close();
         }
-        scanner.close();
+        catch (Exception e){
+            System.out.println(e.getStackTrace());
+        }
+
     }
 }
