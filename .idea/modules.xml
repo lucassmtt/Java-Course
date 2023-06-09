@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/AbstractClass_And_MethodsAbstract/AbstractClass.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/AbstractClass_And_MethodsAbstract/AbstractClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/AbstractMethodsInInterface/AbstractMethodsInInterface.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/AbstractMethodsInInterface/AbstractMethodsInInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Exercise_07_ArrayList/ArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/CodeDebugging/CodeDebugging.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/CodeDebugging/CodeDebugging.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" filepath="$PROJECT_DIR$/WS-Java/Curso_programacao/Curso_programacao.iml" />
