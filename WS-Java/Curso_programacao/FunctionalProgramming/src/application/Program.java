@@ -1,10 +1,13 @@
 package application;
 
 import entities.Product;
+import model.services.ProductService;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Program
 {
@@ -51,9 +54,18 @@ public class Program
 //            System.out.println(product.getName() + " - " + product.getPrice());
 //        }
 
-        productList.forEach(product -> product.setPrice(product.getPrice() * 1.1));
+//        productList.forEach(product -> product.setPrice(product.getPrice() * 1.1)); // set price with 10 per cent more
 
-        productList.forEach(System.out :: println);
 
+        // result in one list of string with the name of products in upper case...
+//        List<String> newProducts = productList.stream().map(x -> x.getName().toUpperCase()).collect(Collectors.toList());
+//        newProducts.forEach(System.out :: println);
+
+
+        // Create one function that receive one function as argument..
+        ProductService productService = new ProductService();
+        double result = productService.filterWithPredicate(productList, x -> x.getName().charAt(0) == 'X');
+        productList.forEach(System.out::println);
+        System.out.println("Sum result: " + result);
     }
 }
