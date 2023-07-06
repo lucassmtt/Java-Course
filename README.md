@@ -1,2 +1,2 @@
 # Java-Course
- Repositório focado no aprendizado em Java.
+ Repository focused to learn java fundamentals... (Stage: Finished)
